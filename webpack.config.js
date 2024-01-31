@@ -8,7 +8,6 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname + "/build"),
   },
-  mode: "production",
   module: {
     rules: [
       {
@@ -44,4 +43,10 @@ module.exports = {
       filename: "style.css",
     }),
   ],
+  devServer: {
+    static: "./public",
+    port: 3000,
+    open: true,
+  },
+  mode: "development",
 };
