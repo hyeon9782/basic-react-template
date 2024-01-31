@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.scss";
 
 const App = () => {
   return (
     <div>
-      <h1>Hello, React!!</h1>
+      <h1 className="title">Hello, React!!</h1>
     </div>
   );
 };
